@@ -1,0 +1,48 @@
+
+body {
+  margin:0;
+  background-color: black;
+  color:whiteSmoke;
+  border: solid 3px red;
+}
+main {
+  position:relative;
+  width: 575px;
+  background-image: url('http://res.cloudinary.com/dzynqn10l/image/upload/v1633196203/Msc/pokemon-bg_ig4uv3.jpg');
+  background-size: 110%;
+  background-repeat: no-repeat;
+}
+#pokemon-container {
+  height: 355px;
+}
+#answer {
+  display: none;
+}
+
+#bg-overlay {
+  color: white;
+  position: absolute;
+  background-color: red;
+  right: 25px;
+  width: 170px;
+  height: 170px;
+  top:60px;
+  border-radius: 50%;
+}
+
+#text-overlay {
+  position: absolute;
+  right: 20px;
+  top: 100px;
+  background-color: #ffcb02;
+  border: solid 7px #2c70ae;
+  padding: 20px;
+  min-width: 130px;
+  font-family: 'Bangers', Arial, sans-serif;
+  font-size: 36px;
+  letter-spacing: 1.2px;
+  color: #3ea2fe;
+  text-shadow: 2px 2px #1d366c;
+  border-radius: 20px;
+  text-align: center;
+}
