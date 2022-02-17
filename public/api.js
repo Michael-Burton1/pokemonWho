@@ -1,6 +1,8 @@
-window.getpokeData =async function(){
+window.getPokeData =async function(){
   const pokemon = await getPokemon();
   const randomPokemon = shuffle(pokemon);
+  const pokemonChoices = get4Pokemon(randomPokemon);
+  console.log(pokemonChoices);
 }
 
 async function getPokemon(){
@@ -13,6 +15,10 @@ function shuffle(unshuffled){
   const shuffled= unshuffled
     .map(value => ({ value, sort: Math.random() }))
     .sort((a,b) => a.sort -b.sort)
-    .map(({value})=> value)
-  return shuffled
+    .map(({value})=> value);
+  return shuffled;
+}
+
+function get4Pokemon(randomPokemon){
+  return randomPokemon.splice(0, 4);
 }
