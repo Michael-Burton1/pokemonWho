@@ -93,7 +93,14 @@ button.incorrect {
   animation: wiggle 1.35s infinite;
 }
 
-
+#pokemon-image {
+  margin: 135px 0 0 135px;
+  transform: scale(2.5);
+  filter: brightness(0);
+  transition: filter .5s ease-out;
+  position: absolute;
+  left: 0;
+}
 
 @keyframes wiggle {
   0% {transform: rotate(0deg);}
